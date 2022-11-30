@@ -1,11 +1,9 @@
 #include <stdio.h>
 
 void divisores(int n){
-    int cont;
-    for (int i = 0; i <= n; i++){
-        cont = i + 1;
-        if (n % cont == 0){
-            printf("%d\n", cont);
+    for (int i = 1; i <= n; i++){
+        if (n % i == 0){
+            printf("%d\n", i);
         }
     }
 }
